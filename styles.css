@@ -1,0 +1,163 @@
+@import url(./reset.css);
+
+:root {
+    --primary-color: #1E3A8A;
+    --secondary-color: #9CA3AF;
+    --highlight-color: #F97316;
+    --background-color: #F3F4F6;
+    --secondary-bgc-color: #c7c9ce;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Here starts the header and nav bar of the website */
+header {
+    background-color: var(--background-color);
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.header-title {
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight: 900;
+    padding: 0 2px;
+}
+
+.header-text {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 2px;
+}
+
+.header-ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0 10px;
+}
+
+.header-li {
+    list-style-type: none;
+    font-size: 20px;
+
+}
+
+.header-li :hover {
+    color: var(--highlight-color);
+}
+
+/* Here starts the main section of the website */
+main {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-flow: column nowrap;
+
+}
+
+/* Here starts the about section of the website */
+.about {
+    width: 100%;
+    background-color: var(--secondary-bgc-color);
+    border-radius: 20px;
+}
+
+.about-title {
+    color: var(--primary-color);
+    padding: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about-text {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Here starts the portfolio(projects list) section of the wesbite */
+.portfolio {
+    width: 100%;
+    background-color: var(--secondary-bgc-color);
+    border-radius: 20px;
+}
+
+.portfolio-title {
+    color: var(--primary-color);
+    padding: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.portfolio-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.portfolio-li {
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.portfolio-li a:hover{
+    color: var(--highlight-color);
+}
+ 
+/* Here starts the Contacts section of the website*/
+.contact {
+    width: 100%;
+    background-color: var(--secondary-bgc-color);
+    border-radius: 20px;
+}
+
+.contact-title {
+    color: var(--primary-color);
+    padding: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-mail {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Here starts the footer of the website */
+.footer {
+    margin-top: 10px;
+    background-color: var(--background-color);
+    padding: 10px;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 700;
+}
